@@ -8,14 +8,14 @@ import json
 import os
 
 try:
-    with open('./data/transactions.json', 'r') as f:
+    with open('./data/user-wallet-transactions.json', 'r') as f:
         data = json.load(f)
     print("Data loaded successfully.")
 except FileNotFoundError:
-    print("Error: 'transactions.json' not found in './data/' folder. Please place the file in data/ and try again.")
+    print("Error: 'user-wallet-transactions.json' not found in './data/' folder. Please place the file in data/ and try again.")
     exit(1)
 except json.JSONDecodeError:
-    print("Error: 'transactions.json' is not a valid JSON file.")
+    print("Error: 'user-wallet-transactions.json' is not a valid JSON file.")
     exit(1)
 
 df = pd.json_normalize(data)
