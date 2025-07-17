@@ -1,0 +1,1 @@
+The file size of user-wallet-transactions.json exceeded GitHub's upload limit, so I couldn’t upload it there. Sorry for the inconvenience. Just paste the file locally and then run score_wallets.py — it will work. Thank you!
